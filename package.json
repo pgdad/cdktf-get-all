@@ -5,7 +5,8 @@
   "description": "An example project to show how to use `@cdktf/cli-core` to build a version of `cdktf get` that emits all languages instead of one. This can be useful to build construct libraries, but we are not yet sure if it's the best way to solve this problem.",
   "main": "./dist/index.js",
   "scripts": {
-    "start": "rm -rf modules && tsx src/index.ts"
+    "start": "rm -rf modules && tsx src/index.ts",
+    "compmodule": "cat package.json | sed 's/cdktf-get-all/mypackage/g' > modules/typescript/package.json && cd modules/typescript && sudo npm link"
   },
   "keywords": [],
   "author": "",

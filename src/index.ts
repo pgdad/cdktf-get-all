@@ -14,10 +14,6 @@ import fs from "fs-extra";
 
   const targets = {
     [Language.TYPESCRIPT]: "modules/typescript",
-    [Language.PYTHON]: "modules/python",
-    [Language.JAVA]: "modules/java",
-    [Language.CSHARP]: "modules/csharp",
-    [Language.GO]: "modules/go",
   };
 
   for (const [language, target] of Object.entries(targets)) {
